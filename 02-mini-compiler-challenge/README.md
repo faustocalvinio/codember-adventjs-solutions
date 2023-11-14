@@ -31,23 +31,25 @@ submit 024899488
 
 Solution:
 
-``js    
-    function compiler ( input ){
-    let count = 0;
-    let outputNumbers= [];
-    let solutionString = '';
+ 
 
     const splittedInput=input.split('');
 
-    splittedInput.forEach(operator => {
-        switch ( operator ){
-            case "&": outputNumbers.push(count);break
-            case "#": count++;break
-            case "@": count--;break
-            case "*": count*=count;break
-        }
-    });
-    solutionString = outputNumbers.join('');
-    return solutionString;
-};
-``
+    function compiler ( input ){
+
+        let count = 0;
+        let outputNumbers= [];
+        let solutionString = '';
+
+        splittedInput.forEach(operator => {
+            switch ( operator ){
+                case "&": outputNumbers.push(count);break
+                case "#": count++;break
+                case "@": count--;break
+                case "*": count*=count;break
+            }
+        });
+        solutionString = outputNumbers.join('');
+        return solutionString;
+    };
+
