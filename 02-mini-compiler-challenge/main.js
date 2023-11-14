@@ -1,14 +1,26 @@
-const message = '&###@&*&###@@##@##&######@@#####@#@#@#@##@@@@@@@@@@@@@@@*&&@@@@@@@@@####@@@@@@@@@#########&#&##@@##@@##@@##@@##@@##@@##@@##@@##@@##@@##@@##@@##@@##@@##@@&';
+// const message = '&###@&*&###@@##@##&######@@#####@#@#@#@##@@@@@@@@@@@@@@@*&&@@@@@@@@@####@@@@@@@@@#########&#&##@@##@@##@@##@@##@@##@@##@@##@@##@@##@@##@@##@@##@@##@@##@@&';
+const message = '&##&*&@&'
+const splitedMessages  =  message.split("");
+
 let count = 0;
-console.log(message.split(""));
-message.split('').forEach(letter => {
+
+console.log(splitedMessages);
+
+splitedMessages.forEach(letter => {
     switch (letter) {
         case '&':
-            count = parseInt(count.toString().concat(count)); break
+            // count = parseInt(count.toString().concat(count)); break
+            console.log(count); break
         case '#':
-            count++ ; break
+            {
+                console.log(count,'adding one')
+                count++
+            } ; break
         case '@':
-            count-- ; break
+            {
+                console.log(count,'removing one')
+                count--
+            } ; break
         case '*':
             count = count * 2; break
     }
