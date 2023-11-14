@@ -1,31 +1,27 @@
-// const message = '&###@&*&###@@##@##&######@@#####@#@#@#@##@@@@@@@@@@@@@@@*&&@@@@@@@@@####@@@@@@@@@#########&#&##@@##@@##@@##@@##@@##@@##@@##@@##@@##@@##@@##@@##@@##@@##@@&';
-const message = '&##&*&@&'
-const splitedMessages  =  message.split("");
+const message = '&###@&*&###@@##@##&######@@#####@#@#@#@##@@@@@@@@@@@@@@@*&&@@@@@@@@@####@@@@@@@@@#########&#&##@@##@@##@@##@@##@@##@@##@@##@@##@@##@@##@@##@@##@@##@@##@@&';
+const solutionParagraph = document.getElementById('solution-p');
 
-let count = 0;
+function compiler ( input ){
+    let count = 0;
+    let outputNumbers= [];
+    let solutionString = '';
 
-console.log(splitedMessages);
+    const splittedInput=input.split('');
 
-splitedMessages.forEach(letter => {
-    switch (letter) {
-        case '&':
-            // count = parseInt(count.toString().concat(count)); break
-            console.log(count); break
-        case '#':
-            {
-                console.log(count,'adding one')
-                count++
-            } ; break
-        case '@':
-            {
-                console.log(count,'removing one')
-                count--
-            } ; break
-        case '*':
-            count = count * 2; break
-    }
-})
+    splittedInput.forEach(operator => {
+        switch ( operator ){
+            case "&": outputNumbers.push(count);break
+            case "#": count++;break
+            case "@": count--;break
+            case "*": count*=count;break
+        }
+    });
+    solutionString = outputNumbers.join('');
+    return solutionString;
+};
+
 
 setTimeout(() => {
-    console.log(count);
+    console.log(compiler(message));
+    solutionParagraph.innerHTML = `Solution: ${compiler(message)}`;
 }, 1000);
