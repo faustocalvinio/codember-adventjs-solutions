@@ -17,7 +17,7 @@ Salida esperada: "4"
 Explicación: Incrementa (1), incrementa (2), multiplica (4), imprime (4).
 
 Entrada: "&##&*&@&"
-Salida esperada: "0243"
+Salida esperada : "0243"
 Explicación: Imprime (0), incrementa (1), incrementa (2), imprime (2), multiplica (4), imprime (4), decrementa (3), imprime (3).
 
 ** Tu desafío: **
@@ -29,3 +29,25 @@ Desarrolla un mini compilador que tome una cadena de texto y devuelva otra caden
 2. Crea un programa al que le pases como entrada el mensaje anterior. Envía la salida con el comando "submit" en la terminal, por ejemplo así:
 submit 024899488
 
+Solution:
+
+``js    
+    function compiler ( input ){
+    let count = 0;
+    let outputNumbers= [];
+    let solutionString = '';
+
+    const splittedInput=input.split('');
+
+    splittedInput.forEach(operator => {
+        switch ( operator ){
+            case "&": outputNumbers.push(count);break
+            case "#": count++;break
+            case "@": count--;break
+            case "*": count*=count;break
+        }
+    });
+    solutionString = outputNumbers.join('');
+    return solutionString;
+};
+``
