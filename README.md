@@ -15,6 +15,11 @@ Solutions for the challenges from https://codember.dev/ and https://adventjs.dev
 | `02` | Regalos Fabricables | [Ver](/ADVENT-JS/02-regalos-fabricables/) |    
 | `03` | Diferencias en el string | [Ver](/ADVENT-JS/03-cadena-textos-regalos/) | 
 | `04` | Letras al reves | [Ver](/ADVENT-JS/04-letras-al-reves/) | 
+| `05` | Cybertruck Santa | [Ver](/ADVENT-JS/05-cybertruck-santa/) | 
+| `06` | Renos a prueba | [Ver](/ADVENT-JS/06-renos-a-prueba/) | 
+| `07` | Cajas en 3D | [Ver](/ADVENT-JS/07-cajas-en-3d/) | 
+| `08` | Ordenando el almacen | [Ver](/ADVENT-JS/08-ordenando-almacen/) | 
+| `09` | Alterna las luces | [Ver](/ADVENT-JS/09-alterna-luces/) | 
 
 ### Codember
 Número | Proyecto | Código |
