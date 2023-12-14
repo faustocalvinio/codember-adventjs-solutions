@@ -1,14 +1,8 @@
-# Codember / AdventJS Solutions
-```js
-                 /\ \                       /\ \
-  ___     ___    \_\ \      __     ___ ___  \ \ \____     __    _ __
- /'___\  / __`\  /'_` \   /'__`\ /' __` __`\ \ \ '__`\  /'__`\ /\`'__\
-/\ \__/ /\ \L\ \/\ \L\ \ /\  __/ /\ \/\ \/\ \ \ \ \L\ \/\  __/ \ \ \/
-\ \____\\ \____/\ \___,_\\ \____\\ \_\ \_\ \_\ \ \_,__/\ \____\ \ \_\
- \/____/ \/___/  \/__,_ / \/____/ \/_/\/_/\/_/  \/___/  \/____/  \/_/
-```
+# Codember & AdventJS Solutions
 
-Solutions for the challenges from https://codember.dev/ and https://adventjs.dev.
+Solutions for the challenges from [codember](https://codember.dev/) and [AdventJS](https://adventjs.dev).
+
+![AdventJS Banner](./adventjs-banner.jpg)
 
 ### AdventJS
 Número | Proyecto | Código |
@@ -22,6 +16,21 @@ Número | Proyecto | Código |
 | `07` | Cajas en 3D | [Ver](/ADVENT-JS/07-cajas-en-3d/) | 
 | `08` | Ordenando el almacen | [Ver](/ADVENT-JS/08-ordenando-almacen/) | 
 | `09` | Alterna las luces | [Ver](/ADVENT-JS/09-alterna-luces/) | 
+| `10` | Arbol de navidad | [Ver](/ADVENT-JS/10-arbol-navidad/) | 
+| `11` | Los elfos estudiosos | [Ver](/ADVENT-JS/11-elfos-estudiosos/) | 
+| `12` | Es copia valida? | [Ver](/ADVENT-JS/12-es-copia-valida/) | 
+| `13` | Calculando el tiempo | [Ver](/ADVENT-JS/13-calculando-tiempo/) | 
+| `14` | Evita la alarma | [Ver](/ADVENT-JS/14-evita-la-alarma/) | 
+
+
+```js
+                 /\ \                       /\ \
+  ___     ___    \_\ \      __     ___ ___  \ \ \____     __    _ __
+ /'___\  / __`\  /'_` \   /'__`\ /' __` __`\ \ \ '__`\  /'__`\ /\`'__\
+/\ \__/ /\ \L\ \/\ \L\ \ /\  __/ /\ \/\ \/\ \ \ \ \L\ \/\  __/ \ \ \/
+\ \____\\ \____/\ \___,_\\ \____\\ \_\ \_\ \_\ \ \_,__/\ \____\ \ \_\
+ \/____/ \/___/  \/__,_ / \/____/ \/_/\/_/\/_/  \/___/  \/____/  \/_/
+```
 
 ### Codember
 Número | Proyecto | Código |
